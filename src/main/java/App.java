@@ -6,6 +6,7 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
@@ -91,6 +92,12 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
+        get("/heroes", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            List<Hero> heroes = Hero.getAll();
+            model.put("heroes", heroes);
+            return new ModelAndView(model, "hero.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 

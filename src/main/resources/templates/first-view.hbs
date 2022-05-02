@@ -5,15 +5,19 @@
 {{#partial "content"}}
 
 
-    <p style="font-family: 'Gloria Hallelujah', cursive">Welcome to HERO-SQUAD</p>
-    <p align="center">An example of heroes and their attributes</p>
+    <p style="font-family: 'Gloria Hallelujah', cursive" id="welcome">
+        <span style="color: lightseagreen">HERO-SQUAD</span>
+        is a social platform. Users will be able to forge a custom squad of superheroes/heroines and share for others to see.
+    </p>
+    <p align="center">MY SQUAD: <span style="font-weight: 900">THE GRAND THEFT AUTO</span></p>
     <div class="portfolio-items-wrapper">
 
         <div class="portfolio-item">
-            <div class="background" style="background-image:url(/images/doctor-strange-poster.jpg)"
+            <div class="background" style="background-image:url(/images/trevor.png)"
             ></div>
             <div class="attributes">
-                <p align="center"><em><u>DR.STRANGE</u></em></p>
+                <p align="center"><em><u>TREVOR</u></em></p>
+                <p align="center">Abilities</p>
                 <ol type="I">
                     <li>Mastery of magic</li>
                     <li>Utilizes mystical artifacts, such as the Cloak of Levitation and the Eye of Agamotto.</li>
@@ -24,9 +28,9 @@
             </div>
         </div>
         <div class="portfolio-item">
-            <div class="background" style="background-image:url(/images/wolverine.jpg)"></div>
+            <div class="background" style="background-image:url(/images/franklin.png)"></div>
             <div class="attributes">
-                <p align="center"><em><u>WOLVERINE</u></em></p>
+                <p align="center"><em><u>FRANKLIN</u></em></p>
                 <ol type="I">
                     <li>Regeneration and slowed aging</li>
                     <li>Utilizes mystical artifacts, such as the Cloak of Levitation and the Eye of Agamotto.</li>
@@ -38,9 +42,9 @@
         </div>
 
         <div class="portfolio-item">
-            <div class="background" style="background-image:url(/images/superman.jpeg)"></div>
+            <div class="background" style="background-image:url(/images/michael.png)"></div>
             <div class="attributes">
-                <p align="center"><em><u>SUPERMAN</u></em></p>
+                <p align="center"><em><u>MICHAEL</u></em></p>
                 <ol type="I">
                     <li>Ocular powers</li>
                     <li>Utilizes mystical artifacts, such as the Cloak of Levitation and the Eye of Agamotto.</li>
@@ -56,7 +60,7 @@
     </div>
 
 
-    <a href="/squads/new" class="btn btn-warning">Take a chance and create an awesome squad yourself!</a>
+    <a href="/squads/new" class="btn btn-warning">Share your squad!</a>
     <style>
             .portfolio-items-wrapper {
             display: grid;
@@ -79,9 +83,13 @@
 
             p{
 
-                font-size: 24px;
+                font-size: 1.5em;
                 font-weight: 600;
             };
+            p#welcome{
+
+                font-size: 3.0em
+            }
 
     </style>
     </div>

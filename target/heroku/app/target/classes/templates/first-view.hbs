@@ -1,0 +1,101 @@
+{{#partial "title"}}
+
+{{/partial}}
+
+{{#partial "content"}}
+
+
+    <p style ="font-family: 'Gloria Hallelujah', cursive; font-size: 30px;">
+        <span style="color: lightseagreen">HERO-SQUAD</span>
+        is a social platform. Users will be able to forge a custom squad of superheroes/heroines and share for others to see.
+    </p>
+    <p align="center">MY SQUAD: <span style="font-weight: 900">THE GRAND THEFT AUTO</span></p>
+    <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item">
+            <div class="background" style="background-image:url(/images/trevor.png)"
+            ></div>
+            <div class="attributes">
+                <p align="center"><em><u>TREVOR</u></em></p>
+                <p>Age: 45</p>
+                <ol type="I">
+                    <li>Most Kills</li>
+                    <li>Headshots</li>
+                    <li>Receiving and dealing damage</li>
+                    <li>Always finds weapons</li>
+                </ol>
+                <p>Aggressive: easily gets into fight and attract police.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="background" style="background-image:url(/images/franklin.png)"></div>
+            <div class="attributes">
+                <p align="center"><em><u>FRANKLIN</u></em></p>
+                <p>Age: 28</p>
+                <ol type="I">
+                    <li>Regeneration and slowed aging</li>
+                    <li>No collision driving</li>
+                    <li>Fast movement and athletic</li>
+                    <li>Enhanced agility.</li>
+                </ol>
+                <p>Easily dies even in pedestrian confrontation</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="background" style="background-image:url(/images/michael.png)"></div>
+            <div class="attributes">
+                <p align="center"><em><u>MICHAEL</u></em></p>
+                <p>Age: 54</p>
+                <ol type="I">
+                    <li>Main character: difficult to die.</li>
+                    <li>Quick Driving</li>
+                    <li>Hidden Assasinations</li>
+                    <li>Quick healing</li>
+                </ol>
+                <p>Small lung capacity: cannot stay in water for long.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="/squads/new" class="btn btn-warning">Share your squad!</a>
+    <style>
+            .portfolio-items-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            }
+            .portfolio-items-wrapper > div {
+    margin:10px;
+}
+            portfolio-item {
+  position: relative;
+}
+            .background{
+            background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+
+            };
+
+            p{
+
+                font-size: 1.5em;
+                font-weight: 600;
+            };
+            p#welcome{
+                font-family: 'Gloria Hallelujah', cursive;
+                font-size: 3.0em;
+            }
+
+    </style>
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}

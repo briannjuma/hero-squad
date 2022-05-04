@@ -13,6 +13,12 @@ HERO-SQUAD is a java web application. Users on the platform sorely for entertain
 * Step 6 : Retrieve local host url from the IDE output window.
 * Step 7 : Visit this link from your browser.
 
+## Other usage/Live link
+https://herosquadjuma.herokuapp.com/
+
+## BUG 
+Maven could not deploy to heroku.
+
 ## Built with
  Spark Framework - A micro framework for creating web applications in java.
  Java - programming language.
